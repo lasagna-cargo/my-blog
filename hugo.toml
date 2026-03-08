@@ -1,0 +1,45 @@
+baseURL = "https://lasagna-cargo.github.io/"
+languageCode = "ja"
+title = "ブログタイトル"
+theme = "PaperMod"
+
+[params]
+  description = "ブログの説明文"
+  author = "あなたの名前"
+  defaultTheme = "auto"    # ダーク/ライト自動切替
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[params.homeInfoParams]
+  Title = "ようこそ"
+  Content = "ブログの紹介文をここに書く"
+
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "アーカイブ"
+    url = "/archives/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "タグ"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "検索"
+    url = "/search/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]  # 検索機能用にJSON出力
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    style = "monokai"
+
