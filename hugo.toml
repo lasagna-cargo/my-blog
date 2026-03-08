@@ -1,4 +1,4 @@
-baseURL = "https://lasagna-cargo.github.io/"
+baseURL = "https://lasagna-cargo.github.io/my-blog/"
 languageCode = "ja"
 title = "ブログタイトル"
 theme = "PaperMod"
